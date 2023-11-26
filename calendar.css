@@ -92,22 +92,6 @@ header{
   
 }
 
-.close-icon{
-  position: relative;
-  right: 20px;
-  cursor: pointer;
-}
-
-.close-icon:hover{
-  color: orangered;
-}
-
-.active.close-icon{
-  visibility: hidden;
-    opacity: 0;
-    top: 10%;
-}
-
 
 .text{
     height: 100%;
