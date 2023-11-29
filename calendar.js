@@ -7,7 +7,7 @@ calendarContainer.style.display = 'none';
 const calendarDays = 24;
 
 let text = ['A. Zsuzsi','Gál Mónika', 'Csipszer Bernadett', 'Ábel Hajnalka', 'Nagy Laura', 'Hoffmann Dia', 'Kocsis-Sné Emese', 'Ungi Niki', 'Máté Zsuzsanna', 'Kovács-Poros Claudia', 'Szakos-Vajda Erika', 'Kovácsné Barbara', 'Nagy-Illés Laura', 'Kántor Viktória', 'Svercsokné Éva', 'Bessy embere', 'Veréb-Török Fanni', 'Dudli Tibi', 'Edi' , 'Andi' , 'Fábián Gergely', 'Farkas Angéla', 'Illés Genonéva', 'Bessy'];
-let index = 0
+
 
 
 
@@ -16,7 +16,10 @@ const openDoor = (path, e) => {
     /*if(date.getDate() == e.target.innerHTML){*/
     e.target.parentNode.classList.add('active');
     e.target.parentNode.style.backgroundImage = `url(${path})`;
-    e.target.innerHTML = text[index++];
+
+ 
+    
+    /*e.target.innerHTML = text[`${index}`];*/
 
     function removeActive(){
         e.target.parentNode.classList.remove('active');
