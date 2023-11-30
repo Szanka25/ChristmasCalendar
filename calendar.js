@@ -2,6 +2,8 @@ const calendarBtn = document.querySelector('.btn');
 const calendarContainer = document.querySelector('.container');
 const snow = document.querySelector('.snow');
 const snow2 = document.querySelector('.snow2');
+const myAudio = document.getElementById('myaudio');
+
 
 calendarContainer.style.display = 'none';
 const calendarDays = 24;
@@ -27,13 +29,14 @@ const openDoor = (path, e) => {
 
     const myTimeOut = setTimeout(removeActive, 3000);
 
-};
+}; 
 
 
 
 
 
 function createCalendar() {
+    myAudio.play();
     for (let i = 0; i < calendarDays; i++) {
         const calendarDoor = document.createElement('div');
         const calendarDoorText = document.createElement('div');
