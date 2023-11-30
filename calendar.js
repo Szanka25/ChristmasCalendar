@@ -36,7 +36,7 @@ const openDoor = (path, e) => {
 
 
 function createCalendar() {
-    myAudio.play();
+  /*  myAudio.play();*/
     for (let i = 0; i < calendarDays; i++) {
         const calendarDoor = document.createElement('div');
         const calendarDoorText = document.createElement('div');
